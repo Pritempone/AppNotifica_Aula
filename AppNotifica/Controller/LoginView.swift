@@ -74,7 +74,7 @@ class LoginView: UIView {
     //cria a função com as propriadades do botão registrar
     var buttonRegistrar: UIButton = {
         let button = UIButton ()
-        button.setTitle("REGIStRAR", for: .normal)
+        button.setTitle("REGISTRAR", for: .normal)
         button.layer.backgroundColor = UIColor(red: 0.369, green: 0.639, blue: 0.639, alpha: 1).cgColor
         button.layer.cornerRadius = 14
         button.translatesAutoresizingMaskIntoConstraints = false
