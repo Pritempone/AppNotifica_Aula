@@ -1,13 +1,16 @@
 //
-//  LoginCoordinator.swift
+//  RegisterCoordinator.swift
 //  AppNotifica
 //
-//  Created by IFB BIOTIC 03 on 08/11/22.
+//  Created by IFB BIOTIC 03 on 24/11/22.
 //
 
 import Foundation
+
+
+import Foundation
 import UIKit
-class LoginCoordinator: Coordinator {
+class RegisterCoordinator: Coordinator {
     
     //faço com que todas as telas que usarem o LoginCoordinator impremente
     //o navigation controller. Senão todos todas as vezes teria que instãnciá-lo
@@ -20,7 +23,7 @@ class LoginCoordinator: Coordinator {
         }
 
       func start() {
-        let viewController = LoginViewController()
+        let viewController = RegisterViewController()
             self.navigationController.pushViewController(viewController, animated: true)
 
     }
