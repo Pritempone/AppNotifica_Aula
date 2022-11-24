@@ -1,5 +1,5 @@
 //
-//  Source.swift
+//  UIcolor+.swift
 //  AppNotifica
 //
 //  Created by IFB BIOTIC 03 on 24/11/22.
@@ -27,6 +27,8 @@ extension UIColor {
     static var placeHolderColor: UIColor {
         UIColor(named: "placeHolderColor") ?? .white
     }
+    
+    
     
     
 }
