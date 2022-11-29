@@ -41,7 +41,7 @@ class LoginCoordinator: Coordinator {
     }
         //função que chama a registerView
         func  gotoLogin() {
-           let coordinator = HomeCoordinator(navigationController: navigationController)
+           let coordinator = TabbarCoordinator(navigationController: navigationController)
             coordinator.start()
         }
 }
