@@ -16,7 +16,6 @@ class LoginCoordinator: Coordinator {
     //cria um construtor para incializar meu navationCrontroller
     init (navigationController: UINavigationController ) {
             self.navigationController = navigationController
-     
         }
 
       func start() {
