@@ -8,16 +8,8 @@
 import Foundation
 import UIKit
 
-class LoginView: UIView {
-    //MARK: - Initialize
-        override init(frame: CGRect) {
-            //chama o frame da superclasse
-            super.init(frame: frame)
-            // muda a cor de fundo do app para branco
-            self.backgroundColor = .viewBackGroundColor
-            setupVisualElements()
-            
-        }
+class LoginView: ViewDefault {
+    
     
   //MARK: -  Clouseres
   var onRegisterTap: (() -> Void)?
@@ -29,11 +21,17 @@ class LoginView: UIView {
     //cria a função com as propriadades da label no login
     var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", font: UIFont.systemFont(ofSize: 17, weight: .regular))
     
-    //cria a função com as propriadades da text no login
-    var emailTextField = TextFieldDefault (placeholder: "E-mail")
+    //cria a variável com as propriadades da text no login
+    var emailTextField = TextFieldDefault (placeholder: "E-mail", keyBordType: .emailAddress, returnKeyType: .next)
     
     //cria a função com as propriadades da text no login
-    var senhaTextField = TextFieldDefault (placeholder: "Senha")
+    var senhaTextField : TextFieldDefault  = {
+        let text = TextFieldDefault(placeholder: "Senha", keyBordType: .emailAddress, returnKeyType: .done)
+        
+        text.isSecureTextEntry = true;
+        
+        return text
+         }()
     
     //cria a função com as propriadades da butao no logor
     var buttonLogar = ButtonDefault(botao: "LOGAR")
@@ -42,7 +40,10 @@ class LoginView: UIView {
     var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
         
     
-    func setupVisualElements() {
+    override func setupVisualElements() {
+        super.setupVisualElements()
+        emailTextField.delegate = self
+        senhaTextField.delegate = self
         self.addSubview(imageLogin)
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
@@ -94,9 +95,6 @@ class LoginView: UIView {
         
         ])
     }
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     //MARK: - Actions
     @objc
@@ -107,5 +105,22 @@ class LoginView: UIView {
     @objc
     private func loginTap(){
         onLoginTap?()
+    }
+}
+extension LoginView: UITextFieldDelegate {
+  
+    //esconde o teclado quando o botão próximo é acionado e foca no proximo campo
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       
+        //quando estiverna campo de email, ao clicar no botao seguinte vai para o campo senha
+        if textField == emailTextField {
+            //
+            self.senhaTextField.becomeFirstResponder()
+        } else {
+            //se náo for o campo senha esconde o teclado
+            textField.resignFirstResponder()
+        }
+        
+        return true
     }
 }

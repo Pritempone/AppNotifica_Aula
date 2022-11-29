@@ -15,6 +15,7 @@
 		0126E36F2936311F00B950B5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126E36E2936311F00B950B5 /* HomeView.swift */; };
 		0126E3712936312E00B950B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126E3702936312E00B950B5 /* HomeViewController.swift */; };
 		0126E3732936340100B950B5 /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126E3722936340100B950B5 /* ViewControllerDefault.swift */; };
+		0126E3752936381600B950B5 /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126E3742936381600B950B5 /* ViewDefault.swift */; };
 		0148B8A1292FB0590002EEE0 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148B8A0292FB0590002EEE0 /* LabelDefault.swift */; };
 		0148B8A3292FB0AB0002EEE0 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148B8A2292FB0AB0002EEE0 /* TextFieldDefault.swift */; };
 		0148B8A5292FB0BE0002EEE0 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148B8A4292FB0BE0002EEE0 /* ButtonDefault.swift */; };
@@ -61,6 +62,7 @@
 		0126E36E2936311F00B950B5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0126E3702936312E00B950B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0126E3722936340100B950B5 /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
+		0126E3742936381600B950B5 /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
 		0148B8A0292FB0590002EEE0 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 		0148B8A2292FB0AB0002EEE0 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 		0148B8A4292FB0BE0002EEE0 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				0148B8A4292FB0BE0002EEE0 /* ButtonDefault.swift */,
 				0148B8A6292FB0D10002EEE0 /* ImageDefault.swift */,
 				0126E3722936340100B950B5 /* ViewControllerDefault.swift */,
+				0126E3742936381600B950B5 /* ViewDefault.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				0148B8A1292FB0590002EEE0 /* LabelDefault.swift in Sources */,
 				0148B8AC292FB2420002EEE0 /* RegisterViewController.swift in Sources */,
 				011A5ADB291A8BBC004DD2CB /* LoginViewController.swift in Sources */,
+				0126E3752936381600B950B5 /* ViewDefault.swift in Sources */,
 				0126E36F2936311F00B950B5 /* HomeView.swift in Sources */,
 				0148B8B1292FB31F0002EEE0 /* UIcolor+.swift in Sources */,
 				0148B8A5292FB0BE0002EEE0 /* ButtonDefault.swift in Sources */,
