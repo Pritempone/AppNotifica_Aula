@@ -32,6 +32,7 @@
 		0148B8AC292FB2420002EEE0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148B8AB292FB2420002EEE0 /* RegisterViewController.swift */; };
 		0148B8AF292FB2E00002EEE0 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148B8AE292FB2E00002EEE0 /* RegisterCoordinator.swift */; };
 		0148B8B1292FB31F0002EEE0 /* UIcolor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148B8B0292FB31F0002EEE0 /* UIcolor+.swift */; };
+		0172F78B293F70E800A91F74 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0172F78A293F70E800A91F74 /* EscolherImagem.swift */; };
 		41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239E8A28F840EA00D92C31 /* AppDelegate.swift */; };
 		41239E8D28F840EA00D92C31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239E8C28F840EA00D92C31 /* SceneDelegate.swift */; };
 		41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239E8E28F840EA00D92C31 /* ViewController.swift */; };
@@ -87,6 +88,7 @@
 		0148B8AB292FB2420002EEE0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0148B8AE292FB2E00002EEE0 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		0148B8B0292FB31F0002EEE0 /* UIcolor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIcolor+.swift"; sourceTree = "<group>"; };
+		0172F78A293F70E800A91F74 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 		41239E8728F840EA00D92C31 /* AppNotifica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNotifica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41239E8A28F840EA00D92C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41239E8C28F840EA00D92C31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				0126E37B2936428A00B950B5 /* NovaOcorrenciaView.swift */,
 				0126E37D2936429A00B950B5 /* NovaOcorrenciaViewController.swift */,
+				0172F78A293F70E800A91F74 /* EscolherImagem.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				0126E3712936312E00B950B5 /* HomeViewController.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				0126E3852936432200B950B5 /* SobreCoordinator.swift in Sources */,
+				0172F78B293F70E800A91F74 /* EscolherImagem.swift in Sources */,
 				0126E36C293630CD00B950B5 /* HomeCoordinator.swift in Sources */,
 				0148B8AA292FB2300002EEE0 /* RegisterView.swift in Sources */,
 				0126E37A2936426F00B950B5 /* TabbarController.swift in Sources */,
